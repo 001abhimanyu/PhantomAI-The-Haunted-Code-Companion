@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhantomAI — Haunted Code Companion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fog fog1"></div><div class="fog fog2"></div>
+<header>
+  <div class="brand"><span class="sigil">☠</span><div><h1>PHANTOM<span>AI</span></h1><p>THE HAUNTED CODE COMPANION</p></div></div>
+  <div class="status"><span class="pulse"></span><span id="statusText">Checking local spirit…</span></div>
+</header>
+<main>
+  <section class="intro">
+    <div class="eyebrow">✦ A SIGNAL FROM THE OTHER SIDE ✦</div>
+    <h2>What secrets <em>haunt</em><br>your code?</h2>
+    <p>Ask the phantom to explain, debug, or conjure something strange.<br>Your messages stay on your machine with local AI.</p>
+  </section>
+  <section class="chat-panel">
+    <div class="panel-top"><span>◉ SPIRIT CHANNEL</span><span class="tiny">LOCAL SESSION · PRIVATE</span></div>
+    <div id="messages" class="messages">
+      <div class="message assistant"><div class="avatar">👻</div><div class="bubble"><b>The Phantom awakens…</b><p>Greetings, mortal. Paste your code, ask a question, or request a tale from the forgotten archives.</p></div></div>
+    </div>
+    <div class="quick-prompts">
+      <button data-prompt="Tell me a short, eerie Halloween story about a haunted computer.">🎃 Tell a ghost story</button>
+      <button data-prompt="Explain recursion like a friendly ghost teaching a beginner.">🕸 Explain a concept</button>
+      <button data-prompt="Give me a spooky but harmless coding challenge in JavaScript.">🦇 Spooky challenge</button>
+    </div>
+    <form id="chatForm">
+      <textarea id="userInput" rows="2" placeholder="Whisper your question to the phantom…" required></textarea>
+      <div class="form-bottom"><span>ENTER TO SEND · SHIFT+ENTER FOR NEW LINE</span><button id="sendBtn" type="submit">SUMMON <span>↗</span></button></div>
+    </form>
+  </section>
+  <section class="setup">
+    <div><span class="setup-icon">⌘</span><div><b>LOCAL AI REQUIRED</b><p>Run Ollama and download a model to summon the phantom. No API key, no cloud account.</p></div></div>
+    <code>ollama run qwen2.5:3b</code>
+    <p class="setup-note">Then keep Ollama running and refresh this page. <a href="https://ollama.com/download" target="_blank" rel="noopener">Install Ollama ↗</a></p>
+  </section>
+  <footer>PHANTOMAI · OPEN SOURCE SPIRIT · YOUR MACHINE, YOUR RULES</footer>
+</main>
+<script src="script.js"></script>
+</body></html>
